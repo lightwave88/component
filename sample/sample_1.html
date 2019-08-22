@@ -1,0 +1,42 @@
+<style>
+    
+</style>
+<div>
+    <!-- 以下是內容 -->
+    <h4>i am component</h4>
+    <div>
+        my content
+    </div>
+</div>
+<script>
+    // 設定的方式
+    class X extends Component {
+        constructor() {
+            super();
+            this.age = 15;
+        }
+        //----------------------------
+        importScript(){
+            let urlList = [];
+            return urlList;
+        }
+        //----------------------------
+        create(){
+            let data;
+            
+            // 設定 data
+            // 或改成 this.$setData(data);
+            super.create(data);
+        }
+        //----------------------------
+        beforeRender(){
+            
+        }
+    }
+
+    // 對外
+    // 讓外部取得使用者設定的 class
+    function getClass() {
+        return X;
+    }
+</script>
